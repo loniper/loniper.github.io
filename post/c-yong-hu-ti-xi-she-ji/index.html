@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>半周年纪念 | Loniper</title>
+<title>C用户体系设计 | Loniper</title>
 <link rel="shortcut icon" href="https://loniper.github.io/favicon.ico?v=1560920712592">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -78,34 +78,64 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              半周年纪念
+              C用户体系设计
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2013-11-25 ·
+                · 2017-08-16 ·
               </time>
               
-                <a href="https://loniper.github.io/tag/life" class="post-tag">
-                  # 生活
+                <a href="https://loniper.github.io/tag/think" class="post-tag">
+                  # 随想
                 </a>
               
             </div>
             
-              <div class="post-feature-image" style="background-image: url('http://d.loniper.com/cSkE+')">
+              <div class="post-feature-image" style="background-image: url('http://d.loniper.com/2G7hDH+')">
               </div>
             
             <div class="post-content">
-              <p>不知不觉，已经跟婉琴相识半周年了。还记得5月25号的时候在镇江万达第一次见面，相约在车展对面，走至展台，看到一个瘦瘦弱弱的女孩站在落地窗前，望着前方的行人愣神－－就是她了，比想象中瘦些，却比意料中清秀，一个让人看上去就会心生疼爱的女孩。</p>
+              <p>根据我司的商业定位，设计一套平台化的C用户体系，要求能满足以下条件：</p>
+<blockquote>
+<ol>
+<li>所有C用户在斑马平台下有且只有唯一的用户编号;</li>
+<li>所有C用户在家政公司下有不同的用户资料，但基于条件1，需实现各家政公司下的免登录下单。</li>
+</ol>
+</blockquote>
 <!-- more -->
-<p>于是约了去吃下午茶，边吃边聊，也算对对方有个初步的了解。吃完看看天色尚早，便去万达影院订了影票看《中国合伙人》，自然心思不在电影上，偷偷完成了技能点－－牵小手，见并未拒绝，心中窃喜且大安。电影结束后已然快6点，再不走就没去姚桥的公车了，于是恋恋不舍地拥抱后即互道分别。</p>
-<p>今天已经11月25号了，初遇之景尚历历在目，转眼间却已过半年。我一直觉得对两人而言半年是个小坎，半年时间差不多能了解一个人的脾气、习性。而这半年来，婉琴以极大的包容心对待我的脾气，这让我感激非常。自省而言，自去年起，我的脾气越来越坏，变的暴躁而易怒，也不知是何原因，总之大不如从前，这也是我不正确的地方，需即时改正。</p>
-<p>今天在团购上团了个蛋糕，来纪念一下，毕竟也算是个纪念日了。通过这半年的相处，觉得跟她还是挺合适的，性格、脾气、生活习惯，毕竟是邻近的村落，语言与家庭方面也没有隔阂，如无意外，希望能明年结婚吧。</p>
-<p><img src="http://d.loniper.com/cSkE+" alt=""></p>
+<p>通过研究<a href="https://www.youzan.com">有赞</a>的用户体系，决定借鉴其部分实现方式，即以平台公众号的openid/unionid为线，完成平台化用户的打通。</p>
+<p>再通过研究微信公众平台的接口资料，得出以下信息：</p>
+<blockquote>
+<ol>
+<li>一个C用户在任一APP_公众号_小程序下的openid是不同的，但当同一家公司的公众号/小程序绑定至开放平台下时，C用户在这家公司下的unionid是唯一的；</li>
+<li>通过网页授权形式，可以获取到C用户在任一微信公众号下的openid，因此可以通过两次回调的方式，获取到C用户在平台公众号和家政公司公众号下的openid。</li>
+</ol>
+</blockquote>
+<p>基于此，可设计用户体系如下图所示：</p>
+<p><img src="http://d.loniper.com/2G7hDH+" alt=""></p>
+<p>为简化接口，可不做已有用户手机号_平台openid_家政公司openid的绑定，因此只需以下三个接口：</p>
+<blockquote>
+<ol>
+<li>通过家政公司openid/unionid判断是否存在用户编号；</li>
+<li>通过平台openid判断是否存在用户编号；</li>
+<li>条件1和2均为否时，创建新用户编号。</li>
+</ol>
+</blockquote>
+<p>以上，即是本次C用户体系改造的设计过程。</p>
 
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://loniper.github.io/post/ying-xiong-xie-mu">
+              <h3 class="post-title">
+                英雄谢幕
+              </h3>
+            </a>
+          </div>
         
 
         

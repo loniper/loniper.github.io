@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VPS架梯 | Loniper</title>
+<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico?v=1560920712592">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://loniper.github.io/styles/main.css">
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://loniper.github.io">
+  <img class="avatar" src="https://loniper.github.io/images/avatar.png?v=1560920712592" alt="">
+  </a>
+  <h1 class="site-title">
+    Loniper
+  </h1>
+  <p class="site-description">
+    loniper的碎碎念
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/loniper/" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              VPS架梯
+            </h2>
+            <div class="post-info">
+              <time class="post-time">
+                · 2014-02-26 ·
+              </time>
+              
+                <a href="https://loniper.github.io/tag/toss" class="post-tag">
+                  # 折腾
+                </a>
+              
+            </div>
+            
+              <div class="post-feature-image" style="background-image: url('http://d.loniper.com/1gR65+')">
+              </div>
+            
+            <div class="post-content">
+              <p>一直都想搞个vps玩玩，觉得在终端窗口里敲出一个个指令符的样子超酷。之前虽然有过特价的vps，但总是觉得自己连Linux基础都不懂，买了vps也是浪费。这次看到<a href="https://bandwagonhost.com">bandwagon</a>在搞特价vps，最低的只要3.99美刀一年，还有4.99、5.99美刀的，虽然配置低了点，但拿来玩玩还不错，纠结了会，入手了5.99刀，配置是内存128M_硬盘3G_流量300G。</p>
+<!-- more -->
+<p>下单后，紧急Google了些vps的基础知识，配置了Debian6.0系统，然后用如下命令更改了登录端口和登录密码：</p>
+<blockquote>
+<ol>
+<li>vi _etc_ssh/sshd_config     找到 Port 22，更改数字</li>
+<li>passwd  用户名</li>
+</ol>
+</blockquote>
+<p>接着就准备搭建VPN了，基于尽快使用不折腾的原则，打算就搞个简单的pptp，找了几个教程，发现<a href="http://www.99way.com/blog/archive/openvz-debian-pptp-%E8%87%AA%E5%8A%A8%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC.htm">这个</a>最方便有效，为免链接实效，拷贝代码如下：</p>
+<blockquote>
+<ol>
+<li>wget -c http://dl.dropbox.com/u/32817960/linux/Software/pptpd_debian.sh</li>
+<li>chmod +x pptpd_debian.sh</li>
+<li>./pptpd_debian.sh_</li>
+</ol>
+</blockquote>
+<p>默认用户名 vpn 密码 123，可在_etc_ppp/chap-secrets 重新配置用户信息。</p>
+<p>vpn配置完成后，发现占用内存才20M出头，想想再搭个shadowsocks吧，在网上搜了比较下，最后选择<a href="https://github.com/madeye/shadowsocks-libev">shadowsocks-libev</a>版，但是根据官方的教程总是提示头文件下载失败，于是重新Google了教程，找到<a href="http://www.lucong.com.cn/lulu/centos-debian-shadowsocks-libev.html">这篇</a>，按此教程搭建成功。同样，拷贝代码如下：</p>
+<blockquote>
+<ol>
+<li>apt-get install build-essential autoconf libtool libssl-dev gcc -y</li>
+<li>apt-get install git -y</li>
+<li>git clone https://github.com/madeye/shadowsocks-libev.git</li>
+<li>cd shadowsocks-libev</li>
+<li>./configure</li>
+<li>make &amp;&amp; make install</li>
+<li>nohup _usr_local_bin_ss-server -s IP地址 -p 端口 -k 密码 -m 加密方式 &amp; (例：nohup _usr_local_bin_ss-server -s 156.132.67.213 -p 8981 -k admin888 -m aes-256-cfb &amp;)</li>
+<li>vi编辑 _etc_rc.local ，在首行加入 nohup _usr_local_bin_ss-server -s IP地址 -p 端口 -k 密码 -m 加密方式 &amp; (开机自启动)</li>
+</ol>
+</blockquote>
+<p>最后，可用ps -ef命令查看以上服务是否在进程中。shadowsocks客户端选用了Goagent X，还不错，可惜pac文件中似乎未对Google搜索作规则，默认的Google总是进入HK站，只能用 google.com/ncr 来强制进入US站。</p>
+<p>PS:这家的vps速度并不是很稳定，感觉一会快一会慢，不过凑合用用还可以了，毕竟这价格，还要啥自行车啊。</p>
+<p><img src="http://d.loniper.com/1gR65+" alt=""></p>
+
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma">
+              <h3 class="post-title">
+                IC IP IQ卡,统统告诉我密码
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  why so seriou ? fairness is in chaos | 
+  <a class="rss" href="https://loniper.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+      </div>
+    </div>
+  </body>
+</html>

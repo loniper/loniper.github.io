@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loniper.github.io</id>
     <title>Loniper</title>
-    <updated>2019-06-19T04:56:26.722Z</updated>
+    <updated>2019-06-19T05:05:14.146Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loniper.github.io"/>
     <link rel="self" href="https://loniper.github.io/atom.xml"/>
@@ -10,6 +10,68 @@
     <logo>https://loniper.github.io/images/avatar.png</logo>
     <icon>https://loniper.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Loniper</rights>
+    <entry>
+        <title type="html"><![CDATA[更换联通冰淇淋全家版套餐]]></title>
+        <id>https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can</id>
+        <link href="https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can">
+        </link>
+        <updated>2017-12-21T11:59:58.000Z</updated>
+        <summary type="html"><![CDATA[<p>继5月份把手机号换成京东大强卡后，我又一次更换了手机套餐。</p>
+<p>这次更换的是联通冰淇淋全家版，其实早几个月前在官网看到的时候就挺心动的，159的月套餐费包含1张主卡两张副卡和100M宽带，省内不限流量，国内2G，每月1000分钟通话，虽然40G后限速到1Mbps，但已经可以说是很实惠了。然而当时刚换大强卡没两个月，各种业务也刚换绑上新手机号，家里宽带也还有近一年才到期，也就懒得折腾。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>继5月份把手机号换成京东大强卡后，我又一次更换了手机套餐。</p>
+<p>这次更换的是联通冰淇淋全家版，其实早几个月前在官网看到的时候就挺心动的，159的月套餐费包含1张主卡两张副卡和100M宽带，省内不限流量，国内2G，每月1000分钟通话，虽然40G后限速到1Mbps，但已经可以说是很实惠了。然而当时刚换大强卡没两个月，各种业务也刚换绑上新手机号，家里宽带也还有近一年才到期，也就懒得折腾。</p>
+<!-- more -->
+<p>10月份的时候，网上陆续传出可以不换号更换互联网套餐的新闻，想着既然普通套餐能换成互联网套餐，那互联网套餐应该也能换成普通套餐吧，于是打电话给联通客服问了下，答曰可以，并告诉我胜太路的营业厅可以更换，问我要不要预约，我说考虑下就挂了。第二天又接到了胜太路营业厅的电话，告诉我说他那边可以办理，并仔细告诉我需要在5～25号的工作日去办，看来联通对这事还是挺上心的。</p>
+<p>于是在12月21号下午，我带上身份证去了胜太路营业厅，发现其实线下是有99/159/199三档的，本来以为159的价格是包含两张副卡的钱，打算办159的，结果被告知办副卡还得再加20，于是犹豫了下最终办理了99的。然后又被告知这个套餐原价是139，99是每月返回40后的价格，并且只有新用户能享受返40的优惠，好在业务员告诉我如果不介意主副号的话，可以新办一张卡作为主卡，将京东大强卡销户后变为副卡即可。</p>
+<p>办理途中不知遇到了什么故障，老号码销户后一直没有成功开户，一直等了两个多小时才办好全部的三张卡，IPTV没要再减了10块，不过返还也少了10块。所以现在的套餐是129的冰淇淋全家版，加了20块钱的副卡费，每月再返回30到沃钱包，总计包含一张主卡两张副卡，省内不限流量，国内1G流量，20G后降速到1Mbps，300分钟通话，50M宽带，感觉还是可以的。</p>
+<p>最后还有个插曲，之前在联通APP上看到有个充1000话费，分5个月返还，赠送500电子券的活动，但由于之前是互联网套餐，不能参与，改成普通套餐后，就可以参与了。于是充了1000块钱，领了500的电子券换了加油卡，这波优惠还是挺划算的，只可惜上个月的充300送300的活动忘记参与了。</p>
+<p><img src="http://d.loniper.com/aG4qIa+" alt=""></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[C用户体系设计]]></title>
+        <id>https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji</id>
+        <link href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji">
+        </link>
+        <updated>2017-08-16T05:02:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>根据我司的商业定位，设计一套平台化的C用户体系，要求能满足以下条件：</p>
+<blockquote>
+<ol>
+<li>所有C用户在斑马平台下有且只有唯一的用户编号;</li>
+<li>所有C用户在家政公司下有不同的用户资料，但基于条件1，需实现各家政公司下的免登录下单。</li>
+</ol>
+</blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<p>根据我司的商业定位，设计一套平台化的C用户体系，要求能满足以下条件：</p>
+<blockquote>
+<ol>
+<li>所有C用户在斑马平台下有且只有唯一的用户编号;</li>
+<li>所有C用户在家政公司下有不同的用户资料，但基于条件1，需实现各家政公司下的免登录下单。</li>
+</ol>
+</blockquote>
+<!-- more -->
+<p>通过研究<a href="https://www.youzan.com">有赞</a>的用户体系，决定借鉴其部分实现方式，即以平台公众号的openid/unionid为线，完成平台化用户的打通。</p>
+<p>再通过研究微信公众平台的接口资料，得出以下信息：</p>
+<blockquote>
+<ol>
+<li>一个C用户在任一APP_公众号_小程序下的openid是不同的，但当同一家公司的公众号/小程序绑定至开放平台下时，C用户在这家公司下的unionid是唯一的；</li>
+<li>通过网页授权形式，可以获取到C用户在任一微信公众号下的openid，因此可以通过两次回调的方式，获取到C用户在平台公众号和家政公司公众号下的openid。</li>
+</ol>
+</blockquote>
+<p>基于此，可设计用户体系如下图所示：</p>
+<p><img src="http://d.loniper.com/2G7hDH+" alt=""></p>
+<p>为简化接口，可不做已有用户手机号_平台openid_家政公司openid的绑定，因此只需以下三个接口：</p>
+<blockquote>
+<ol>
+<li>通过家政公司openid/unionid判断是否存在用户编号；</li>
+<li>通过平台openid判断是否存在用户编号；</li>
+<li>条件1和2均为否时，创建新用户编号。</li>
+</ol>
+</blockquote>
+<p>以上，即是本次C用户体系改造的设计过程。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[英雄谢幕]]></title>
         <id>https://loniper.github.io/post/ying-xiong-xie-mu</id>
@@ -174,46 +236,6 @@
 <p>拿到手开箱，使用了好几年iPhone了，自然也没啥可激动的。插卡连接iTunes激活安装应用，一切设置好后再仔细把玩。发现除了屏幕大了些，手感也圆润了不少，返回的手势操作比之前感觉更顺滑。初次之外就没什么区别了，而且个人手偏小，4.7寸的屏幕拿在手上已经单手点按不到左下角的数字键了，行走过程中总得小心翼翼生怕摔掉。壳在淘宝上买了两个，都不满意，或许是习惯了裸奔的手感，只能继续先裸奔着了。</p>
 <p>总而言之，结合iOS8看，这仍是一部好手机，但相比之前变动不大，没有让人眼前一亮的设计。继续用它自然也是为了苹果这个生态圈，但如果下代或下下代升级依旧不大，我也就不打算再换了。</p>
 <p><img src="http://d.loniper.com/xvKT+" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[U盘DIY]]></title>
-        <id>https://loniper.github.io/post/u-pan-diy</id>
-        <link href="https://loniper.github.io/post/u-pan-diy">
-        </link>
-        <updated>2014-09-13T06:12:29.000Z</updated>
-        <summary type="html"><![CDATA[<p>前几天在<a href="http://www.smzdm.com">什么值得买</a>上看到<a href="http://haitao.smzdm.com/youhui/294059">闪迪CZ80</a>64G版在特价$34.99，直邮到手约¥230，网站上写的的数据是写入170MB_s读取190MB_s，有些心动，家里的三个U盘都是USB2.0的，而且读写速度狂慢，根本不能用。可点进去一看，已经没货了。看了看评论，褒扬的声音还是挺多的，遗憾之余，看到有人提到DIY的U盘，想起之前在<a href="http://v2ex.com">V2EX</a>上看到好像也有人<a href="http://www.v2ex.com/t/132320">提过</a>，这才知道原来U盘还有卖DIY的。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>前几天在<a href="http://www.smzdm.com">什么值得买</a>上看到<a href="http://haitao.smzdm.com/youhui/294059">闪迪CZ80</a>64G版在特价$34.99，直邮到手约¥230，网站上写的的数据是写入170MB_s读取190MB_s，有些心动，家里的三个U盘都是USB2.0的，而且读写速度狂慢，根本不能用。可点进去一看，已经没货了。看了看评论，褒扬的声音还是挺多的，遗憾之余，看到有人提到DIY的U盘，想起之前在<a href="http://v2ex.com">V2EX</a>上看到好像也有人<a href="http://www.v2ex.com/t/132320">提过</a>，这才知道原来U盘还有卖DIY的。</p>
-<!-- more -->
-<p>研究了下，芯片由低级到高级分TLC、MLC、SLC三种，主控的话IS903似乎比较合适。于是淘宝了下，SLC价格比较高，MLC的倒还好，64G的价格在¥150左右，原本是三星的芯片，卖家说东芝的更好，于是给换了东芝的。</p>
-<p>第二天就收到了货，质量看起来还行，不过说好的盒子居然没给，拷贝了个2G的文件，速度基本在70M_s，跟之前Firewire800的硬盘和UHS-1的高速SD卡速度一样，用测速软件看了下，读写居然都在200M_s以上，当然这也只是理论速度了。</p>
-<p>对比下原来的那三个废柴U盘：</p>
-<p><img src="http://d.loniper.com/6upt+" alt=""></p>
-<p><img src="http://d.loniper.com/DFpp+" alt=""></p>
-<p>速度真是一个天一个地啊，但不知道能用多久，Mac上也没有量产工具，也没有检测芯片和主控的工具，只能改天用台windows电脑看看了。</p>
-<p><img src="http://d.loniper.com/OY4u+" alt=""></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[物超所值的eneloop君]]></title>
-        <id>https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun</id>
-        <link href="https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun">
-        </link>
-        <updated>2014-09-04T01:42:33.000Z</updated>
-        <summary type="html"><![CDATA[<p>Magic mouse里的两节eneloop已经用了三年多了，一直想换，但看eneloop XX一年后的留存电量是75%，比老的差许多，所以一直没有太大的心思换。昨天看到京东在搞电池的促销，瞅了眼，eneloop XX已经被eneloop pro所代替，一年后电量存留也提高到了85%，价格也还可以，于是便下单了四节装的5号版。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>Magic mouse里的两节eneloop已经用了三年多了，一直想换，但看eneloop XX一年后的留存电量是75%，比老的差许多，所以一直没有太大的心思换。昨天看到京东在搞电池的促销，瞅了眼，eneloop XX已经被eneloop pro所代替，一年后电量存留也提高到了85%，价格也还可以，于是便下单了四节装的5号版。</p>
-<!-- more -->
-<p>南京有个仓库就是好啊，上午下单下午就到了，交钱拿货不提。手感还是挺有分量，不过包装就很简陋了。</p>
-<p><img src="http://d.loniper.com/uKRU+" alt=""></p>
-<p>MM换上新的能量魔方：</p>
-<p><img src="http://d.loniper.com/jh9M+" alt=""></p>
-<p>说起这个老的eneloop，还是来南京后不久买的，当时想要一个电池和移动电源，找了半天找到了这个：</p>
-<p><img src="http://d.loniper.com/2Iag+" alt=""></p>
-<p>瞬间就被这货可攻可受的特质吸引到了，于是下了单。到手后才发现自己想多了...丫确实可以在自我充电后给其他设备充电，但转化率太低了，4000mAh的总电量只能给当时用的iPhone3GS(还是iPhone4来着)冲40%左右的电，也就是说转化率在20%左右。深深囧到了，这货按我当时的工资也算是高价买的了，居然如此不堪大用，所幸后来买了magic mouse后发现这鼠标除了手感差不耐磨之外还很费电，于是这两节eneloop便一直长驻在了鼠标里，直到昨天光荣退休。</p>
-<p>去新蛋看了下，这两节老eneloop是2011年3月10日买的，算起来已经用了三年半了，而且依旧宝刀未老，还能在其他需要它的地方发挥余热，算是我这些年买过的用的最久最物超所值的东西了吧。</p>
-<p><img src="http://d.loniper.com/16yap+" alt=""></p>
 ]]></content>
     </entry>
 </feed>
