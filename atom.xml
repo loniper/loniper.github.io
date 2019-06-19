@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loniper.github.io</id>
     <title>Loniper</title>
-    <updated>2019-06-19T04:40:43.661Z</updated>
+    <updated>2019-06-19T04:46:35.572Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loniper.github.io"/>
     <link rel="self" href="https://loniper.github.io/atom.xml"/>
@@ -41,6 +41,28 @@
 <p>挣扎着起床，上网查了下，似乎是急性阑尾炎的症状。婉琴起来烧了壶热水，打电话给社区医院，但没有人接。</p>
 <p>症状越来越符合阑尾炎的描述，腹泻且有恶心的感觉，于是我干脆催吐了下，结果意外地居然不痛了，喝了杯热水清理食道后，上床继续睡觉。</p>
 <p>由此，真的是感觉身体开始走下坡路了，以前以为的自己身体多好多好一年到头不生几次病，其实只是年岁未到身体各项机能各个零件还没开始衰退罢了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小米路由器上手体验]]></title>
+        <id>https://loniper.github.io/post/xiao-mi-lu-you-qi-shang-shou-ti-yan</id>
+        <link href="https://loniper.github.io/post/xiao-mi-lu-you-qi-shang-shou-ti-yan">
+        </link>
+        <updated>2016-03-24T10:44:29.000Z</updated>
+        <summary type="html"><![CDATA[<p>前天下单的小米路由昨天试了下，感觉还可以，基于openwrt，改动还是比较大的，完全小白化了，配置上手很快。</p>
+<p>之前担心的Wi-Fi信号也还可以，在客厅和卫生间都还能连到5GHz。测了下5GHz的传输速度，靠近路由器时基本稳定在40M_s左右，峰值能到50M_s出头，挺满意的了。迅雷下载也还不错，没开会员的情况下下了个《功夫熊猫3》，我20M的带宽下载稳定在1.2M/s＋。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>前天下单的小米路由昨天试了下，感觉还可以，基于openwrt，改动还是比较大的，完全小白化了，配置上手很快。</p>
+<p>之前担心的Wi-Fi信号也还可以，在客厅和卫生间都还能连到5GHz。测了下5GHz的传输速度，靠近路由器时基本稳定在40M_s左右，峰值能到50M_s出头，挺满意的了。迅雷下载也还不错，没开会员的情况下下了个《功夫熊猫3》，我20M的带宽下载稳定在1.2M/s＋。</p>
+<!-- more -->
+<p>略蛋疼的有两点：</p>
+<ol>
+<li>samba的名称读的是2.4GHz的SSID名称，我之前一直设置的是loniper2.4GHz，但Mac上读的就变成loniper2/.4GHz，导致Mac自带的samba功能连接不上，最后只能改名解决。</li>
+<li>DNS不知道为什么改了之后不生效，重启了路由器也不行，在路由器里看是114DNS了，但在电脑手机上看还是默认的网关，有待解决。</li>
+</ol>
+<p>总的来说，上手的感觉还不错，基本能满足我的需求，接下来几天会看看稳定性，看看不关机的情况下能否持续使用。</p>
+<p>感觉要对小米黑转路转粉了＝。＝</p>
+<p><img src="http://d.loniper.com/JUt7+" alt=""></p>
 ]]></content>
     </entry>
     <entry>
@@ -83,6 +105,45 @@
 <p>是啊，领导的决策不能以我们左右，而我们，也没强大到可以说走就走不管去留的地步。更何况，房子这座大山，即将死死的把我压制在工作第一线，不能有丝毫的懈怠。</p>
 <p>不过，在无尽的生活的苦海中，偶尔还是会有些欢乐的。例如今年更新的苹果三件套，例如今天收到的父亲的短信和母亲的电话，更例如，身边陪伴的人。其实是很感谢她的，不知为何，如今我的脾气越来越大，虽不是有意为之且来去如风，却时常因小事发作，每每这时，她便不与我争，默默承受下来。想必，她心里也有不少委屈吧。今年10月份送了她一直想要的手镯，前几天圣诞时送了个coach的包。明年的纪念日，或许就结婚了吧。</p>
 <p>不管如何，欢喜或悲愤，2014就要过去了，我也即将踏进26岁的门槛。今天过后，不再今天；明天过后，还有明天。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[物超所值的eneloop君]]></title>
+        <id>https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun</id>
+        <link href="https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun">
+        </link>
+        <updated>2014-09-04T01:42:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>Magic mouse里的两节eneloop已经用了三年多了，一直想换，但看eneloop XX一年后的留存电量是75%，比老的差许多，所以一直没有太大的心思换。昨天看到京东在搞电池的促销，瞅了眼，eneloop XX已经被eneloop pro所代替，一年后电量存留也提高到了85%，价格也还可以，于是便下单了四节装的5号版。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Magic mouse里的两节eneloop已经用了三年多了，一直想换，但看eneloop XX一年后的留存电量是75%，比老的差许多，所以一直没有太大的心思换。昨天看到京东在搞电池的促销，瞅了眼，eneloop XX已经被eneloop pro所代替，一年后电量存留也提高到了85%，价格也还可以，于是便下单了四节装的5号版。</p>
+<!-- more -->
+<p>南京有个仓库就是好啊，上午下单下午就到了，交钱拿货不提。手感还是挺有分量，不过包装就很简陋了。</p>
+<p><img src="http://d.loniper.com/uKRU+" alt=""></p>
+<p>MM换上新的能量魔方：</p>
+<p><img src="http://d.loniper.com/jh9M+" alt=""></p>
+<p>说起这个老的eneloop，还是来南京后不久买的，当时想要一个电池和移动电源，找了半天找到了这个：</p>
+<p><img src="http://d.loniper.com/2Iag+" alt=""></p>
+<p>瞬间就被这货可攻可受的特质吸引到了，于是下了单。到手后才发现自己想多了...丫确实可以在自我充电后给其他设备充电，但转化率太低了，4000mAh的总电量只能给当时用的iPhone3GS(还是iPhone4来着)冲40%左右的电，也就是说转化率在20%左右。深深囧到了，这货按我当时的工资也算是高价买的了，居然如此不堪大用，所幸后来买了magic mouse后发现这鼠标除了手感差不耐磨之外还很费电，于是这两节eneloop便一直长驻在了鼠标里，直到昨天光荣退休。</p>
+<p>去新蛋看了下，这两节老eneloop是2011年3月10日买的，算起来已经用了三年半了，而且依旧宝刀未老，还能在其他需要它的地方发挥余热，算是我这些年买过的用的最久最物超所值的东西了吧。</p>
+<p><img src="http://d.loniper.com/16yap+" alt=""></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第三块屏幕]]></title>
+        <id>https://loniper.github.io/post/di-san-kuai-ping-mu</id>
+        <link href="https://loniper.github.io/post/di-san-kuai-ping-mu">
+        </link>
+        <updated>2014-07-08T10:41:14.000Z</updated>
+        <summary type="html"><![CDATA[<p>从10年初用iPhone3G以来，我一直被Apple的软硬件设计所折服，至今我都还记得第一次使用iPhone时的惊喜：上网、视频、游戏…all in one，这就是我在大二某次和舍友讨论手机的发展时所设想的手机应有的样子！所以我坚定地用了几年iPhone，它也从未让我失望，无论是优美的外在还是丰富的内在，都堪称是近乎完美的移动终端。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>从10年初用iPhone3G以来，我一直被Apple的软硬件设计所折服，至今我都还记得第一次使用iPhone时的惊喜：上网、视频、游戏…all in one，这就是我在大二某次和舍友讨论手机的发展时所设想的手机应有的样子！所以我坚定地用了几年iPhone，它也从未让我失望，无论是优美的外在还是丰富的内在，都堪称是近乎完美的移动终端。</p>
+<!-- more -->
+<p>因而我在11年入手了MacBook Pro，换了SSD换了内存，流畅的操作体验让我对Windows几乎产生了排斥。同样的，第一次拆开后壳看到井井有条的硬件时，让我瞬间觉得之前所用的三星电脑的内部设计是如此的没有格调。</p>
+<p>最让我心仪的莫过于可以在Mac和iPhone上同步的一些软件，它们总会让我时不时感叹于科技给人带来的便利----科技果然是由一群懒人所推动的。</p>
+<p>而一直以来，我都对iPad没有什么兴趣，总觉得在家我有Mac，出门我有iPhone，为什么需要一个只是屏幕大一点的平板呢？而且这平板还跟手机运行的是同样的系统和软件。</p>
+<p>但我发现我错了，入手iPad mini2才几天，我就迷上了它，大屏幕带来的不仅仅是感官上的刺激，更多的是操作上的便利。无论是看文章还是玩游戏，它都比用iPhone舒适很多，以至于在家的时候我根本不想再去碰iPhone了。300多克的重量对单手持举也几乎不是压力，因此躺床上的时候刷推看RSS更舒适更享受了。</p>
+<p>遗憾的是，由于买的是Wi-Fi版，不能直插3G卡，因而在外面时不能刷推，RSS啥的也不能同步过来，因而限制了许多使用场景，3G路由+3G网卡一套又有点贵，只能作罢，就依乔老爷子所说，作为占领沙发和床头的第三块屏幕吧。</p>
+<p><img src="http://d.loniper.com/EeP5+" alt=""></p>
 ]]></content>
     </entry>
     <entry>
