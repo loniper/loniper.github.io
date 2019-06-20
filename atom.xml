@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loniper.github.io</id>
     <title>Loniper</title>
-    <updated>2019-06-19T08:22:11.540Z</updated>
+    <updated>2019-06-20T03:47:11.685Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loniper.github.io"/>
     <link rel="self" href="https://loniper.github.io/atom.xml"/>
@@ -10,6 +10,40 @@
     <logo>https://loniper.github.io/images/avatar.png</logo>
     <icon>https://loniper.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Loniper</rights>
+    <entry>
+        <title type="html"><![CDATA[Osmo Pocket初体验]]></title>
+        <id>https://loniper.github.io/post/osmo-pocket-chu-ti-yan</id>
+        <link href="https://loniper.github.io/post/osmo-pocket-chu-ti-yan">
+        </link>
+        <updated>2019-05-10T02:22:33.000Z</updated>
+        <summary type="html"><![CDATA[<p>去年Osmo Pocket发布的时候稍微关注了下，觉得大疆还是很厉害的，将机械云台的体积压缩到了口红大小，并且还支持4K60P与人脸追焦，简直是Vlog神器。后来很多KOL测评的时候也是按着Vlog的定位去试机，但也有一些人认为它的26mm镜头视角太窄，不适合用来自拍。不过当时我对它并没有太大的兴趣，觉得手机和相机组合也就够用了，用不着单独买个摄像的设备。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>去年Osmo Pocket发布的时候稍微关注了下，觉得大疆还是很厉害的，将机械云台的体积压缩到了口红大小，并且还支持4K60P与人脸追焦，简直是Vlog神器。后来很多KOL测评的时候也是按着Vlog的定位去试机，但也有一些人认为它的26mm镜头视角太窄，不适合用来自拍。不过当时我对它并没有太大的兴趣，觉得手机和相机组合也就够用了，用不着单独买个摄像的设备。</p>
+<!-- more -->
+<p>然而今年突然对它又重新燃起了兴趣，觉得机械云台实在太有吸引力了，手机和相机虽有电子防抖，但拍出来的素材依旧抖动厉害，须得后期加防抖剪裁，实在不方便，而且它还支持4K60P，我的相机LX100是只能4K30P的，iPhoneX虽然能4K60P，但录制时发热和耗电会非常严重。犹豫了再三，还是在京东6期免息了个，另加了张128G的内存卡。</p>
+<p>京东物流还是一如既往给力，上午下的单子下午就到了。第一印象就是机器很小巧精致，拍摄效果稳如鸡头，比iPhone和相机的电子防抖不知道高到哪里去了。</p>
+<p>用了几天，总结了下它的优缺点如下：</p>
+<h4 id="优点">优点</h4>
+<ol>
+<li>机身小巧便携，配上原装的收纳盒，揣裤兜里即可走遍天下</li>
+<li>机械防抖稳如狗，效果是电子防抖很难比肩的</li>
+<li>续航还可以，开关机速度也挺快</li>
+<li>支持4K60P，拍摄模式多样，操作便捷易用</li>
+</ol>
+<h4 id="缺点">缺点</h4>
+<ol>
+<li>在步行时，画面出来会有轻微的上下波动</li>
+<li>不自带蓝牙/Wi-Fi，放置拍摄时不方便</li>
+<li>人脸追焦不支持4K60P</li>
+<li>最近对焦距离太远，还比不上iPhone</li>
+<li>画质一般，跟iPhoneX差不多</li>
+</ol>
+<p>其中我最难以忍受的其实就是4，因为本身它的屏幕很小，只能大概构个图，但往往导出素材后发现没对上焦，这就很蛋疼了。另外素机的功能其实还是挺有限的，需要拓展功能就要买配件，但装了配件它的体积就又上去了，所以我也一直没买配件，毕竟本来就是冲着体积去的。</p>
+<p>据说二代会有1英寸的底，不过到时候体积和价格应该都会增加吧，早买早享受，也不纠结啥了。</p>
+<p>附五一用Osmo Pocket拍的第一段小视频：<a href="https://www.bilibili.com/video/av52003413">生命的意义</a></p>
+<p><img src="http://d.loniper.com/UxToJM+" alt=""></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[更换联通冰淇淋全家版套餐]]></title>
         <id>https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can</id>
@@ -218,23 +252,6 @@
 <p>是啊，领导的决策不能以我们左右，而我们，也没强大到可以说走就走不管去留的地步。更何况，房子这座大山，即将死死的把我压制在工作第一线，不能有丝毫的懈怠。</p>
 <p>不过，在无尽的生活的苦海中，偶尔还是会有些欢乐的。例如今年更新的苹果三件套，例如今天收到的父亲的短信和母亲的电话，更例如，身边陪伴的人。其实是很感谢她的，不知为何，如今我的脾气越来越大，虽不是有意为之且来去如风，却时常因小事发作，每每这时，她便不与我争，默默承受下来。想必，她心里也有不少委屈吧。今年10月份送了她一直想要的手镯，前几天圣诞时送了个coach的包。明年的纪念日，或许就结婚了吧。</p>
 <p>不管如何，欢喜或悲愤，2014就要过去了，我也即将踏进26岁的门槛。今天过后，不再今天；明天过后，还有明天。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iPhone6入手小记]]></title>
-        <id>https://loniper.github.io/post/iphone6-ru-shou-xiao-ji</id>
-        <link href="https://loniper.github.io/post/iphone6-ru-shou-xiao-ji">
-        </link>
-        <updated>2014-10-14T07:16:44.000Z</updated>
-        <summary type="html"><![CDATA[<p>9月10号凌晨一点，苹果按例发布了新一代iPhone－－iPhone6，与之前爆料的一样，增大为4.7和5.5英寸的屏幕、超薄的机身，连奇丑无比的后壳都与之前所放出的图片一模一样。从发布会透露的参数来看，与iPhone5s相比也未作多大的提升。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>9月10号凌晨一点，苹果按例发布了新一代iPhone－－iPhone6，与之前爆料的一样，增大为4.7和5.5英寸的屏幕、超薄的机身，连奇丑无比的后壳都与之前所放出的图片一模一样。从发布会透露的参数来看，与iPhone5s相比也未作多大的提升。</p>
-<!-- more -->
-<p>于是本不打算入手，iPhone5升级到iOS8后各种新特性也大多能用，唯一令我向往的，也就是touch ID。后来在twitter上看到<a href="https://twitter.com/flyfishcyx">飞鱼</a>说多买了几个iPhone，问有没有人要，问了下价格，5K包邮费，于是有些心动，遂将其拿下。</p>
-<p>接下来的日子就是等待了，该死的EMS活活给我拖到了10月5号才拿到手，期间我打了无数个电话，南京邮政、南京海关、南京海关驻邮办仓库、南京海关驻邮办窗口、EMS雨花台揽件部......每次都是我去想办法联系，它却从未主动联系过我，甚至我都不知道邮件到了各处、位于何种状态。最终还是打电话向11183反应邮政才告诉我邮件到了海关窗口处，于是10月5号我在尚未收到报税单的情况下去海关窗口自提了邮件。这也让我见识到了国企的傲慢姿态，以后不会再主动用EMS的服务。</p>
-<p>拿到手开箱，使用了好几年iPhone了，自然也没啥可激动的。插卡连接iTunes激活安装应用，一切设置好后再仔细把玩。发现除了屏幕大了些，手感也圆润了不少，返回的手势操作比之前感觉更顺滑。初次之外就没什么区别了，而且个人手偏小，4.7寸的屏幕拿在手上已经单手点按不到左下角的数字键了，行走过程中总得小心翼翼生怕摔掉。壳在淘宝上买了两个，都不满意，或许是习惯了裸奔的手感，只能继续先裸奔着了。</p>
-<p>总而言之，结合iOS8看，这仍是一部好手机，但相比之前变动不大，没有让人眼前一亮的设计。继续用它自然也是为了苹果这个生态圈，但如果下代或下下代升级依旧不大，我也就不打算再换了。</p>
-<p><img src="http://d.loniper.com/xvKT+" alt=""></p>
 ]]></content>
     </entry>
 </feed>
