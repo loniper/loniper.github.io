@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loniper.github.io</id>
     <title>Loniper</title>
-    <updated>2019-06-20T03:47:11.685Z</updated>
+    <updated>2019-06-21T06:44:49.831Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loniper.github.io"/>
     <link rel="self" href="https://loniper.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://loniper.github.io/images/avatar.png</logo>
     <icon>https://loniper.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, Loniper</rights>
+    <entry>
+        <title type="html"><![CDATA[升级Catalina和iOS13]]></title>
+        <id>https://loniper.github.io/post/sheng-ji-catalina-he-ios13</id>
+        <link href="https://loniper.github.io/post/sheng-ji-catalina-he-ios13">
+        </link>
+        <updated>2019-06-21T06:31:55.000Z</updated>
+        <summary type="html"><![CDATA[<p>冲着iOS13的夜间模式，把Mac、iPad、iPhone都升级了一下，没想到遇到了很多坑。</p>
+<p>首先升级的是Mac，升级到Catalina后，iTunes没有了，把想继续升级iPhone和iPad的我愣了半天，后来经推友指点，在finder里找到了iPhone和iPad的盘符。于是继续升级，然后就遇到了更大的坑，iCloud Drive居然有问题，据说是更改了API，导致部分APP读取iCloud里的文件时出错，而且Mac上的文稿似乎也换了一个文件夹，现在出现了俩documents文夹。删除iCloud文件也有问题，明明已经拖到垃圾桶并且已经清空了，一眨眼垃圾桶又自己满了，不得已先降回了Mojave把iCloud整理了一下，又重新升Catalina。</p>
+<p>不过总的来说，夜间模式还是很香的，看起来很漂亮，希望众APP尽快适配吧，尤其是不得不用的微信，到现在连Mac上的夜间模式都还没适配。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>冲着iOS13的夜间模式，把Mac、iPad、iPhone都升级了一下，没想到遇到了很多坑。</p>
+<p>首先升级的是Mac，升级到Catalina后，iTunes没有了，把想继续升级iPhone和iPad的我愣了半天，后来经推友指点，在finder里找到了iPhone和iPad的盘符。于是继续升级，然后就遇到了更大的坑，iCloud Drive居然有问题，据说是更改了API，导致部分APP读取iCloud里的文件时出错，而且Mac上的文稿似乎也换了一个文件夹，现在出现了俩documents文夹。删除iCloud文件也有问题，明明已经拖到垃圾桶并且已经清空了，一眨眼垃圾桶又自己满了，不得已先降回了Mojave把iCloud整理了一下，又重新升Catalina。</p>
+<p>不过总的来说，夜间模式还是很香的，看起来很漂亮，希望众APP尽快适配吧，尤其是不得不用的微信，到现在连Mac上的夜间模式都还没适配。</p>
+<!-- more -->
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Osmo Pocket初体验]]></title>
         <id>https://loniper.github.io/post/osmo-pocket-chu-ti-yan</id>
@@ -232,26 +248,6 @@
 <p>一年半过去了，我仍旧在<a href="http://www.qianmi.com">千米网</a>的<a href="http://elife.qianmi.com">E生活</a>部门，年中的时候发生了一次较大的变动，原来属于千米网的E生活部门要求独立，个中原委不提，对我的影响就是原本归属产品研发部的我们三个产品和相关的开发人员都搬到了E生活所在的二楼，主管也由李某变成了张某。另两个产品一直对张某的理念是不认同的，因而搬下来两个月内，他们便相继离职了。</p>
 <p>我自然也动了离职的念头，在这边一年多，所学甚少，吃老本虽说也不碍事，但总会心生厌倦，且这老本有越吃越忘的迹象，总不免担心以后身无所长。</p>
 <p>然而，接了一些面试电话，总觉得不甚满意，要么太远要么薪资不到位。后来总算找到家还算满意的，于是跟张某提了离职，最终被挽留了下来。说来张某对我也算挺好的了，不要求加班，也主动给涨过薪，但总觉得这里不是久留之地，唉，明年再看吧。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[再见,2014;再见,25]]></title>
-        <id>https://loniper.github.io/post/zai-jian-2014zai-jian-25</id>
-        <link href="https://loniper.github.io/post/zai-jian-2014zai-jian-25">
-        </link>
-        <updated>2014-12-31T08:35:24.000Z</updated>
-        <summary type="html"><![CDATA[<p>很意外的，今年的农历生日居然是14年的最后一天。于是刚好做个年终总结吧，顺道祝自己生日快乐。</p>
-<p>其实挺俗的，或许人小时候都是期盼着快点长大，即使经历和智慧的增长未必能赶上时间的步伐，也大多希望能早日摆脱父母的束缚，在自己的小小世界里称王成霸。然而真正等这一天步步逼近，流逝的时间的匆匆又让我们战战兢兢如履薄冰。在时间空间的罅隙里，我们如同自大而又懦弱的小国王子，梦想着脚踏乾坤却又只能顾影嗟叹。</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>很意外的，今年的农历生日居然是14年的最后一天。于是刚好做个年终总结吧，顺道祝自己生日快乐。</p>
-<p>其实挺俗的，或许人小时候都是期盼着快点长大，即使经历和智慧的增长未必能赶上时间的步伐，也大多希望能早日摆脱父母的束缚，在自己的小小世界里称王成霸。然而真正等这一天步步逼近，流逝的时间的匆匆又让我们战战兢兢如履薄冰。在时间空间的罅隙里，我们如同自大而又懦弱的小国王子，梦想着脚踏乾坤却又只能顾影嗟叹。</p>
-<!-- more -->
-<p>细细一想，算起来今年已在三个公司待过了，除了去年就过去的第一家欣网，只待了一个星期的不靠谱的第二家贝贝云，还剩下目前依旧在职的千米网，换工作的频次确实连我自己都感到讶异。虽说也有理所当然的物质的原因，但心里的倦怠却日渐深厚。总觉得离我想象的生活有一定偏差，不过若问我有哪些偏差，我却又一时难以说清－－我本就不是个有远大抱负的人。</p>
-<p>来南京工作五年，从当初的热血冲动，到现在的处变不惊，不知是该说自己成熟了，还是该说自己冷漠了。或许成长就是这样？当初在百阅辞职时，还不好意思跟同事讲，总觉得有些创业未半而中道背叛的意味；而今年在欣网提离职时，却感觉如此的心安理得理所当然。依旧联系的同事也随公司而逐渐减少，第一家还有四五个，第二家就只剩下一两个，欣网的便是无事不联系了。</p>
-<p>在千米网已经半年了，刚来时的新鲜劲也如墙头饱经年岁的涂鸦般逐渐褪色，倦意悄然上升，成为占领心里残垣之上的斑驳。其实也跟同事私下讨论过是不是又要转移阵地了，但最终结论却是“又能去哪呢”。</p>
-<p>是啊，领导的决策不能以我们左右，而我们，也没强大到可以说走就走不管去留的地步。更何况，房子这座大山，即将死死的把我压制在工作第一线，不能有丝毫的懈怠。</p>
-<p>不过，在无尽的生活的苦海中，偶尔还是会有些欢乐的。例如今年更新的苹果三件套，例如今天收到的父亲的短信和母亲的电话，更例如，身边陪伴的人。其实是很感谢她的，不知为何，如今我的脾气越来越大，虽不是有意为之且来去如风，却时常因小事发作，每每这时，她便不与我争，默默承受下来。想必，她心里也有不少委屈吧。今年10月份送了她一直想要的手镯，前几天圣诞时送了个coach的包。明年的纪念日，或许就结婚了吧。</p>
-<p>不管如何，欢喜或悲愤，2014就要过去了，我也即将踏进26岁的门槛。今天过后，不再今天；明天过后，还有明天。</p>
 ]]></content>
     </entry>
 </feed>
