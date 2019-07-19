@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loniper.github.io</id>
     <title>Loniper</title>
-    <updated>2019-07-19T09:22:30.226Z</updated>
+    <updated>2019-07-19T09:30:28.428Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loniper.github.io"/>
     <link rel="self" href="https://loniper.github.io/atom.xml"/>
@@ -57,7 +57,7 @@
 <p>其中我最难以忍受的其实就是4，因为本身它的屏幕很小，只能大概构个图，但往往导出素材后发现没对上焦，这就很蛋疼了。另外素机的功能其实还是挺有限的，需要拓展功能就要买配件，但装了配件它的体积就又上去了，所以我也一直没买配件，毕竟本来就是冲着体积去的。</p>
 <p>据说二代会有1英寸的底，不过到时候体积和价格应该都会增加吧，早买早享受，也不纠结啥了。</p>
 <p>附五一用Osmo Pocket拍的第一段小视频:</p>
-<iframe src="//player.bilibili.com/player.html?aid=52003413&cid=91041103&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100vw; height: 56vw"> </iframe>
+<iframe src="//player.bilibili.com/player.html?aid=52003413&cid=91041103&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100vw; height: 56vw; max-width: 100%; max-height: 500px"> </iframe>
 <p><img src="http://d.loniper.com/UxToJM+" alt=""></p>
 ]]></content>
     </entry>
