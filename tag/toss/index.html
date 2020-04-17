@@ -1,205 +1,159 @@
-<html>
-  <head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>折腾 | Loniper</title>
-<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico?v=1587096391475">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Loniper</title>
+<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://loniper.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://loniper.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Loniper - Atom Feed" href="https://loniper.github.io/atom.xml">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+    
 
+  <meta name="description" content="loniper的碎碎念" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://loniper.github.io">
-  <img class="avatar" src="https://loniper.github.io/images/avatar.png?v=1587096391475" alt="">
-  </a>
-  <h1 class="site-title">
-    Loniper
-  </h1>
-  <p class="site-description">
-    loniper的碎碎念
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
   </div>
-  <div class="social-container">
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
     
-      
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
     
-      
-        <a href="https://twitter.com/loniper/" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
     
-      
-        <a href="https://weibo.com/loniper/" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
     
-      
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
     
-      
-        <a href="https://facebook.com/jiangteng/" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      
-    
-  </div>
+    <a href="https://loniper.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：#折腾
-            </h2> 
-        </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/sheng-ji-catalina-he-ios13/">
-        <h2 class="post-title">升级Catalina和iOS13</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2019-06-21 ·
-        </time>
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        折腾
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-          <a href="https://loniper.github.io/tag/toss/" class="post-tag">
-            # 折腾
-          </a>
-        
-      </div>
-      
-      <div class="post-abstract">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/sheng-ji-catalina-he-ios13/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          升级Catalina和iOS13
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2019-06-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>冲着iOS13的夜间模式，把Mac、iPad、iPhone都升级了一下，没想到遇到了很多坑。</p>
 <p>首先升级的是Mac，升级到Catalina后，iTunes没有了，把想继续升级iPhone和iPad的我愣了半天，后来经推友指点，在finder里找到了iPhone和iPad的盘符。于是继续升级，然后就遇到了更大的坑，iCloud Drive居然有问题，据说是更改了API，导致部分APP读取iCloud里的文件时出错，而且Mac上的文稿似乎也换了一个文件夹，现在出现了俩documents文夹。删除iCloud文件也有问题，明明已经拖到垃圾桶并且已经清空了，一眨眼垃圾桶又自己满了，不得已先降回了Mojave把iCloud整理了一下，又重新升Catalina。</p>
 <p>不过总的来说，夜间模式还是很香的，看起来很漂亮，希望众APP尽快适配吧，尤其是不得不用的微信，到现在连Mac上的夜间模式都还没适配。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can/">
-        <h2 class="post-title">更换联通冰淇淋全家版套餐</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2017-12-21 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/toss/" class="post-tag">
-            # 折腾
-          </a>
-        
       </div>
-      
-      <div class="post-abstract">
+      <a href="https://loniper.github.io/post/sheng-ji-catalina-he-ios13/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          更换联通冰淇淋全家版套餐
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2017-12-21</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>继5月份把手机号换成京东大强卡后，我又一次更换了手机套餐。</p>
 <p>这次更换的是联通冰淇淋全家版，其实早几个月前在官网看到的时候就挺心动的，159的月套餐费包含1张主卡两张副卡和100M宽带，省内不限流量，国内2G，每月1000分钟通话，虽然40G后限速到1Mbps，但已经可以说是很实惠了。然而当时刚换大强卡没两个月，各种业务也刚换绑上新手机号，家里宽带也还有近一年才到期，也就懒得折腾。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/">
-        <h2 class="post-title">升级Yosemite和iOS8</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-07-31 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/toss/" class="post-tag">
-            # 折腾
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/" class="post-feature-image" style="background-image: url('http://d.loniper.com/ogR9+')">
+      <a href="https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          升级Yosemite和iOS8
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-07-31</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>距离Yosemite发布已经过去快两个月了，发布第二天我即安装了DP1和Beta1，试用了一下，感觉还不稳定，最关键的是axure打不开，自然不能正常日用，于是灰溜溜地降级回了Mavericks和iOS7。</p>
 <p>上周Yosemite面向大众的Beta1发布，本也没打算装，不过看到推上一众人等都在讨论，于是心里又开始痒痒了。在DP和Beta里纠结了一下，还是选了Beta，一方面无需安装后再升级，一方面可能会比经常更新的DP稳定些。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/vps-jia-ti/">
-        <h2 class="post-title">VPS架梯</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-02-26 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/toss/" class="post-tag">
-            # 折腾
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/vps-jia-ti/" class="post-feature-image" style="background-image: url('http://d.loniper.com/1gR65+')">
+      <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/ogR9+" alt="升级Yosemite和iOS8">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/vps-jia-ti/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          VPS架梯
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-02-26</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>一直都想搞个vps玩玩，觉得在终端窗口里敲出一个个指令符的样子超酷。之前虽然有过特价的vps，但总是觉得自己连Linux基础都不懂，买了vps也是浪费。这次看到<a href="https://bandwagonhost.com">bandwagon</a>在搞特价vps，最低的只要3.99美刀一年，还有4.99、5.99美刀的，虽然配置低了点，但拿来玩玩还不错，纠结了会，入手了5.99刀，配置是内存128M_硬盘3G_流量300G。</p>
 
-      </di>
-    </article>
-  
-</div>
-
-        <div class="pagination-container">
-  
-  
-</div>
-
-        <div class="site-footer">
-  why so seriou ? fairness is in chaos . | 
-  <a class="rss" href="https://loniper.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
+      <a href="https://loniper.github.io/post/vps-jia-ti/" class="btn">
+        阅读更多
+      </a>
     </div>
-  </body>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/1gR65+" alt="VPS架梯">
+    
+  </div>
+  
+      </div>
+
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  why so seriou ? fairness is in chaos .
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://loniper.github.io/media/scripts/main.js"></script>
+</body>
 </html>

@@ -1,347 +1,298 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Loniper</title>
-<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico?v=1587096391475">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://loniper.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://loniper.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Loniper - Atom Feed" href="https://loniper.github.io/atom.xml">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+    
 
+  <meta name="description" content="loniper的碎碎念" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://loniper.github.io">
-  <img class="avatar" src="https://loniper.github.io/images/avatar.png?v=1587096391475" alt="">
-  </a>
-  <h1 class="site-title">
-    Loniper
-  </h1>
-  <p class="site-description">
-    loniper的碎碎念
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
   </div>
-  <div class="social-container">
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
     
-      
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
     
-      
-        <a href="https://twitter.com/loniper/" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
     
-      
-        <a href="https://weibo.com/loniper/" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
     
-      
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
     
-      
-        <a href="https://facebook.com/jiangteng/" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      
-    
-  </div>
+    <a href="https://loniper.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/zai-jian-2014zai-jian-25/">
-        <h2 class="post-title">再见,2014;再见,25</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-12-31 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/life/" class="post-tag">
-            # 生活
-          </a>
-        
-      </div>
+    <div class="max-w-4xl w-full mx-auto pt-32">
       
-      <div class="post-abstract">
+
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/zai-jian-2014zai-jian-25/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          再见,2014;再见,25
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-12-31</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>很意外的，今年的农历生日居然是14年的最后一天。于是刚好做个年终总结吧，顺道祝自己生日快乐。</p>
 <p>其实挺俗的，或许人小时候都是期盼着快点长大，即使经历和智慧的增长未必能赶上时间的步伐，也大多希望能早日摆脱父母的束缚，在自己的小小世界里称王成霸。然而真正等这一天步步逼近，流逝的时间的匆匆又让我们战战兢兢如履薄冰。在时间空间的罅隙里，我们如同自大而又懦弱的小国王子，梦想着脚踏乾坤却又只能顾影嗟叹。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/iphone6-ru-shou-xiao-ji/">
-        <h2 class="post-title">iPhone6入手小记</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-10-14 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/digital/" class="post-tag">
-            # 数码
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/iphone6-ru-shou-xiao-ji/" class="post-feature-image" style="background-image: url('http://d.loniper.com/xvKT+')">
+      <a href="https://loniper.github.io/post/zai-jian-2014zai-jian-25/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/iphone6-ru-shou-xiao-ji/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          iPhone6入手小记
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-10-14</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>9月10号凌晨一点，苹果按例发布了新一代iPhone－－iPhone6，与之前爆料的一样，增大为4.7和5.5英寸的屏幕、超薄的机身，连奇丑无比的后壳都与之前所放出的图片一模一样。从发布会透露的参数来看，与iPhone5s相比也未作多大的提升。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/u-pan-diy/">
-        <h2 class="post-title">U盘DIY</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-09-13 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/digital/" class="post-tag">
-            # 数码
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/u-pan-diy/" class="post-feature-image" style="background-image: url('http://d.loniper.com/OY4u+')">
+      <a href="https://loniper.github.io/post/iphone6-ru-shou-xiao-ji/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/xvKT+" alt="iPhone6入手小记">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/u-pan-diy/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          U盘DIY
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-09-13</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>前几天在<a href="http://www.smzdm.com">什么值得买</a>上看到<a href="http://haitao.smzdm.com/youhui/294059">闪迪CZ80</a>64G版在特价$34.99，直邮到手约¥230，网站上写的的数据是写入170MB_s读取190MB_s，有些心动，家里的三个U盘都是USB2.0的，而且读写速度狂慢，根本不能用。可点进去一看，已经没货了。看了看评论，褒扬的声音还是挺多的，遗憾之余，看到有人提到DIY的U盘，想起之前在<a href="http://v2ex.com">V2EX</a>上看到好像也有人<a href="http://www.v2ex.com/t/132320">提过</a>，这才知道原来U盘还有卖DIY的。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun/">
-        <h2 class="post-title">物超所值的eneloop君</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-09-04 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/digital/" class="post-tag">
-            # 数码
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun/" class="post-feature-image" style="background-image: url('http://d.loniper.com/uKRU+')">
+      <a href="https://loniper.github.io/post/u-pan-diy/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/OY4u+" alt="U盘DIY">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          物超所值的eneloop君
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-09-04</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>Magic mouse里的两节eneloop已经用了三年多了，一直想换，但看eneloop XX一年后的留存电量是75%，比老的差许多，所以一直没有太大的心思换。昨天看到京东在搞电池的促销，瞅了眼，eneloop XX已经被eneloop pro所代替，一年后电量存留也提高到了85%，价格也还可以，于是便下单了四节装的5号版。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/">
-        <h2 class="post-title">升级Yosemite和iOS8</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-07-31 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/toss/" class="post-tag">
-            # 折腾
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/" class="post-feature-image" style="background-image: url('http://d.loniper.com/ogR9+')">
+      <a href="https://loniper.github.io/post/wu-chao-suo-zhi-de-eneloop-jun/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/uKRU+" alt="物超所值的eneloop君">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          升级Yosemite和iOS8
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-07-31</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>距离Yosemite发布已经过去快两个月了，发布第二天我即安装了DP1和Beta1，试用了一下，感觉还不稳定，最关键的是axure打不开，自然不能正常日用，于是灰溜溜地降级回了Mavericks和iOS7。</p>
 <p>上周Yosemite面向大众的Beta1发布，本也没打算装，不过看到推上一众人等都在讨论，于是心里又开始痒痒了。在DP和Beta里纠结了一下，还是选了Beta，一方面无需安装后再升级，一方面可能会比经常更新的DP稳定些。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/di-san-kuai-ping-mu/">
-        <h2 class="post-title">第三块屏幕</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-07-08 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/digital/" class="post-tag">
-            # 数码
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/di-san-kuai-ping-mu/" class="post-feature-image" style="background-image: url('http://d.loniper.com/EeP5+')">
+      <a href="https://loniper.github.io/post/sheng-ji-yosemite-he-ios8/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/ogR9+" alt="升级Yosemite和iOS8">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/di-san-kuai-ping-mu/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          第三块屏幕
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-07-08</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>从10年初用iPhone3G以来，我一直被Apple的软硬件设计所折服，至今我都还记得第一次使用iPhone时的惊喜：上网、视频、游戏…all in one，这就是我在大二某次和舍友讨论手机的发展时所设想的手机应有的样子！所以我坚定地用了几年iPhone，它也从未让我失望，无论是优美的外在还是丰富的内在，都堪称是近乎完美的移动终端。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/yi-ci-bu-yu-kuai-de-huan-gong-di/">
-        <h2 class="post-title">一次不愉快的换工地</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-06-20 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/roast/" class="post-tag">
-            # 吐槽
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/yi-ci-bu-yu-kuai-de-huan-gong-di/" class="post-feature-image" style="background-image: url('http://d.loniper.com/ud3Y+')">
+      <a href="https://loniper.github.io/post/di-san-kuai-ping-mu/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/EeP5+" alt="第三块屏幕">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/yi-ci-bu-yu-kuai-de-huan-gong-di/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          一次不愉快的换工地
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-06-20</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>在欣网一年了，感觉工作实在繁琐，PPT让我头大，工资也不尽人意。4月底的时候决心重找工作，于是开始面试，已经拿到了两家的offer，在犹豫的时候接到了罗某的电话，说是<a href="http://www.babyun.cn">某创业公司</a>，问我有没兴趣blabla，问了下薪资，离那两家相差太远，所以委婉地拒绝了。然后某天傍晚又接到了他的电话，说另两家给的薪资他也可以考虑，跟我详细谈了他的产品、公司发展规划神马的，让我有空去跟他谈谈。第二天我去了另一家参加复试，由于天气太热，就说不去他那了。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/vps-jia-ti/">
-        <h2 class="post-title">VPS架梯</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-02-26 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/toss/" class="post-tag">
-            # 折腾
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/vps-jia-ti/" class="post-feature-image" style="background-image: url('http://d.loniper.com/1gR65+')">
+      <a href="https://loniper.github.io/post/yi-ci-bu-yu-kuai-de-huan-gong-di/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/ud3Y+" alt="一次不愉快的换工地">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/vps-jia-ti/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          VPS架梯
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-02-26</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>一直都想搞个vps玩玩，觉得在终端窗口里敲出一个个指令符的样子超酷。之前虽然有过特价的vps，但总是觉得自己连Linux基础都不懂，买了vps也是浪费。这次看到<a href="https://bandwagonhost.com">bandwagon</a>在搞特价vps，最低的只要3.99美刀一年，还有4.99、5.99美刀的，虽然配置低了点，但拿来玩玩还不错，纠结了会，入手了5.99刀，配置是内存128M_硬盘3G_流量300G。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma/">
-        <h2 class="post-title">IC IP IQ卡,统统告诉我密码</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-02-16 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/think/" class="post-tag">
-            # 随想
-          </a>
-        
       </div>
-      
-      <div class="post-abstract">
+      <a href="https://loniper.github.io/post/vps-jia-ti/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/1gR65+" alt="VPS架梯">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          IC IP IQ卡,统统告诉我密码
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-02-16</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>昨天去移动客服一天，由于四楼没网，未能看看互联网资讯，今天早上打开Reeder，铺天盖地的<a href="http://www.ifanr.com/395396">Google收购Nest</a>的文章印入眼帘，收购价32亿美刀，全现金支付。惊叹于Google真壕的同时，感慨Nest的好运，创始人和投资人脸上的褶子恐怕都笑出来了吧。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/ban-zhou-nian-ji-nian/">
-        <h2 class="post-title">半周年纪念</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2013-11-25 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/life/" class="post-tag">
-            # 生活
-          </a>
-        
       </div>
-      
-        <a href="https://loniper.github.io/post/ban-zhou-nian-ji-nian/" class="post-feature-image" style="background-image: url('http://d.loniper.com/cSkE+')">
+      <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/ban-zhou-nian-ji-nian/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          半周年纪念
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2013-11-25</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>不知不觉，已经跟婉琴相识半周年了。还记得5月25号的时候在镇江万达第一次见面，相约在车展对面，走至展台，看到一个瘦瘦弱弱的女孩站在落地窗前，望着前方的行人愣神－－就是她了，比想象中瘦些，却比意料中清秀，一个让人看上去就会心生疼爱的女孩。</p>
 
-      </di>
-    </article>
-  
-</div>
-
-    
-        <div class="pagination-container">
-  
-    <a href="https://loniper.github.io/" class="prev-page">上一页</a>
-  
-  
-</div>
-
-    
-        <div class="site-footer">
-  why so seriou ? fairness is in chaos . | 
-  <a class="rss" href="https://loniper.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
+      <a href="https://loniper.github.io/post/ban-zhou-nian-ji-nian/" class="btn">
+        阅读更多
+      </a>
     </div>
-  </body>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/cSkE+" alt="半周年纪念">
+    
+  </div>
+  
+      </div>
+
+      
+  <div class="my-4 flex justify-between px-4 md:px-0">
+    
+      <a href="https://loniper.github.io/" class="btn btn-white">
+        <i class="ri-arrow-left-line mr-4"></i>
+        上一页
+      </a>
+    
+    
+  </div>
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  why so seriou ? fairness is in chaos .
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://loniper.github.io/media/scripts/main.js"></script>
+</body>
+
 </html>

@@ -1,113 +1,71 @@
-<html>
-  <head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>随想 | Loniper</title>
-<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico?v=1587096391475">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Loniper</title>
+<link rel="shortcut icon" href="https://loniper.github.io/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://loniper.github.io/media/css/tailwind.css">
 <link rel="stylesheet" href="https://loniper.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Loniper - Atom Feed" href="https://loniper.github.io/atom.xml">
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+    
 
+  <meta name="description" content="loniper的碎碎念" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
 
-
-  </head>
-  <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://loniper.github.io">
-  <img class="avatar" src="https://loniper.github.io/images/avatar.png?v=1587096391475" alt="">
-  </a>
-  <h1 class="site-title">
-    Loniper
-  </h1>
-  <p class="site-description">
-    loniper的碎碎念
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
   </div>
-  <div class="social-container">
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
     
-      
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
     
-      
-        <a href="https://twitter.com/loniper/" target="_blank">
-          <i class="fab fa-twitter"></i>
-        </a>
-      
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
     
-      
-        <a href="https://weibo.com/loniper/" target="_blank">
-          <i class="fab fa-weibo"></i>
-        </a>
-      
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
     
-      
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
     
-      
-        <a href="https://facebook.com/jiangteng/" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-      
-    
-  </div>
+    <a href="https://loniper.github.io/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
 </div>
 
-        <div class="current-tag-container">
-            <h2 class="title">
-                标签：#随想
-            </h2> 
-        </div>
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji/">
-        <h2 class="post-title">C用户体系设计</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2017-08-16 ·
-        </time>
+    <div class="max-w-4xl w-full mx-auto pt-32">
+      <h1 class="text-2xl font-bold pb-8 flex justify-center items-center">
+        <i class="ri-hashtag"></i>
+        随想
+      </h1>
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
         
-          <a href="https://loniper.github.io/tag/think/" class="post-tag">
-            # 随想
-          </a>
-        
-      </div>
-      
-        <a href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji/" class="post-feature-image" style="background-image: url('http://d.loniper.com/2G7hDH+')">
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          C用户体系设计
         </a>
-      
-      <div class="post-abstract">
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2017-08-16</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>根据我司的商业定位，设计一套平台化的C用户体系，要求能满足以下条件：</p>
 <blockquote>
 <ol>
@@ -116,69 +74,67 @@
 </ol>
 </blockquote>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/ying-xiong-xie-mu/">
-        <h2 class="post-title">英雄谢幕</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2017-03-04 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/think/" class="post-tag">
-            # 随想
-          </a>
-        
       </div>
-      
-      <div class="post-abstract">
+      <a href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="http://d.loniper.com/2G7hDH+" alt="C用户体系设计">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/ying-xiong-xie-mu/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          英雄谢幕
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2017-03-04</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>婉琴的同事，贺姐和陈云过来玩，下午请了假本来想陪她们玩玩然后吃个晚饭的，没料到下午三点她们就要走，而且吃过午饭后居然跑去逛菜场，于是我买了金刚狼3的票，一个人跑去看电影。</p>
 <p>在支付宝上买票的时候瞟了眼影评，说并不是特效片，不了解前传的人看起来比较无趣甚至要睡着，于是做好了看叙事剧情的准备，没想到看完后，真的是被打动了。</p>
 
-      </di>
-    </article>
-  
-    <article class="post">
-      <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma/">
-        <h2 class="post-title">IC IP IQ卡,统统告诉我密码</h2>
-      </a>
-      <div class="post-info">
-        <time class="post-time">
-          · 2014-02-16 ·
-        </time>
-        
-          <a href="https://loniper.github.io/tag/think/" class="post-tag">
-            # 随想
-          </a>
-        
       </div>
-      
-      <div class="post-abstract">
+      <a href="https://loniper.github.io/post/ying-xiong-xie-mu/" class="btn">
+        阅读更多
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          IC IP IQ卡,统统告诉我密码
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2014-02-16</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
         <p>昨天去移动客服一天，由于四楼没网，未能看看互联网资讯，今天早上打开Reeder，铺天盖地的<a href="http://www.ifanr.com/395396">Google收购Nest</a>的文章印入眼帘，收购价32亿美刀，全现金支付。惊叹于Google真壕的同时，感慨Nest的好运，创始人和投资人脸上的褶子恐怕都笑出来了吧。</p>
 
-      </di>
-    </article>
-  
-</div>
-
-        <div class="pagination-container">
-  
-  
-</div>
-
-        <div class="site-footer">
-  why so seriou ? fairness is in chaos . | 
-  <a class="rss" href="https://loniper.github.io/atom.xml" target="_blank">RSS</a>
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
+      <a href="https://loniper.github.io/post/ic-ip-iq-qia-tong-tong-gao-su-wo-mi-ma/" class="btn">
+        阅读更多
+      </a>
     </div>
-  </body>
+    
+  </div>
+  
+      </div>
+
+      
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  why so seriou ? fairness is in chaos .
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://loniper.github.io/media/scripts/main.js"></script>
+</body>
 </html>
