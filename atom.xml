@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://loniper.github.io</id>
     <title>Loniper</title>
-    <updated>2019-07-19T09:30:28.428Z</updated>
+    <updated>2020-04-17T04:07:06.293Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://loniper.github.io"/>
     <link rel="self" href="https://loniper.github.io/atom.xml"/>
     <subtitle>loniper的碎碎念</subtitle>
     <logo>https://loniper.github.io/images/avatar.png</logo>
     <icon>https://loniper.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2019, Loniper</rights>
+    <rights>All rights reserved 2020, Loniper</rights>
     <entry>
         <title type="html"><![CDATA[升级Catalina和iOS13]]></title>
-        <id>https://loniper.github.io/post/sheng-ji-catalina-he-ios13</id>
-        <link href="https://loniper.github.io/post/sheng-ji-catalina-he-ios13">
+        <id>https://loniper.github.io/post/sheng-ji-catalina-he-ios13/</id>
+        <link href="https://loniper.github.io/post/sheng-ji-catalina-he-ios13/">
         </link>
         <updated>2019-06-21T06:31:55.000Z</updated>
         <summary type="html"><![CDATA[<p>冲着iOS13的夜间模式，把Mac、iPad、iPhone都升级了一下，没想到遇到了很多坑。</p>
@@ -28,8 +28,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Osmo Pocket初体验]]></title>
-        <id>https://loniper.github.io/post/osmo-pocket-chu-ti-yan</id>
-        <link href="https://loniper.github.io/post/osmo-pocket-chu-ti-yan">
+        <id>https://loniper.github.io/post/osmo-pocket-chu-ti-yan/</id>
+        <link href="https://loniper.github.io/post/osmo-pocket-chu-ti-yan/">
         </link>
         <updated>2019-05-10T02:22:33.000Z</updated>
         <summary type="html"><![CDATA[<p>去年Osmo Pocket发布的时候稍微关注了下，觉得大疆还是很厉害的，将机械云台的体积压缩到了口红大小，并且还支持4K60P与人脸追焦，简直是Vlog神器。后来很多KOL测评的时候也是按着Vlog的定位去试机，但也有一些人认为它的26mm镜头视角太窄，不适合用来自拍。不过当时我对它并没有太大的兴趣，觉得手机和相机组合也就够用了，用不着单独买个摄像的设备。</p>
@@ -58,13 +58,13 @@
 <p>据说二代会有1英寸的底，不过到时候体积和价格应该都会增加吧，早买早享受，也不纠结啥了。</p>
 <p>附五一用Osmo Pocket拍的第一段小视频:</p>
 <iframe src="//player.bilibili.com/player.html?aid=52003413&cid=91041103&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100vw; height: 56vw; max-width: 100%; max-height: 500px"> </iframe>
-<p><img src="http://d.loniper.com/UxToJM+" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="http://d.loniper.com/UxToJM+" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[更换联通冰淇淋全家版套餐]]></title>
-        <id>https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can</id>
-        <link href="https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can">
+        <id>https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can/</id>
+        <link href="https://loniper.github.io/post/geng-huan-lian-tong-bing-qi-lin-quan-jia-ban-tao-can/">
         </link>
         <updated>2017-12-21T11:59:58.000Z</updated>
         <summary type="html"><![CDATA[<p>继5月份把手机号换成京东大强卡后，我又一次更换了手机套餐。</p>
@@ -81,8 +81,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[C用户体系设计]]></title>
-        <id>https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji</id>
-        <link href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji">
+        <id>https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji/</id>
+        <link href="https://loniper.github.io/post/c-yong-hu-ti-xi-she-ji/">
         </link>
         <updated>2017-08-16T05:02:35.000Z</updated>
         <summary type="html"><![CDATA[<p>根据我司的商业定位，设计一套平台化的C用户体系，要求能满足以下条件：</p>
@@ -110,7 +110,7 @@
 </ol>
 </blockquote>
 <p>基于此，可设计用户体系如下图所示：</p>
-<p><img src="http://d.loniper.com/2G7hDH+" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="http://d.loniper.com/2G7hDH+" alt="" loading="lazy"></figure>
 <p>为简化接口，可不做已有用户手机号_平台openid_家政公司openid的绑定，因此只需以下三个接口：</p>
 <blockquote>
 <ol>
@@ -124,8 +124,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[英雄谢幕]]></title>
-        <id>https://loniper.github.io/post/ying-xiong-xie-mu</id>
-        <link href="https://loniper.github.io/post/ying-xiong-xie-mu">
+        <id>https://loniper.github.io/post/ying-xiong-xie-mu/</id>
+        <link href="https://loniper.github.io/post/ying-xiong-xie-mu/">
         </link>
         <updated>2017-03-04T07:50:46.000Z</updated>
         <summary type="html"><![CDATA[<p>婉琴的同事，贺姐和陈云过来玩，下午请了假本来想陪她们玩玩然后吃个晚饭的，没料到下午三点她们就要走，而且吃过午饭后居然跑去逛菜场，于是我买了金刚狼3的票，一个人跑去看电影。</p>
@@ -144,8 +144,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[大屏大享受]]></title>
-        <id>https://loniper.github.io/post/da-ping-da-xiang-shou</id>
-        <link href="https://loniper.github.io/post/da-ping-da-xiang-shou">
+        <id>https://loniper.github.io/post/da-ping-da-xiang-shou/</id>
+        <link href="https://loniper.github.io/post/da-ping-da-xiang-shou/">
         </link>
         <updated>2016-12-26T07:12:56.000Z</updated>
         <summary type="html"><![CDATA[<p>今年年初的时候就想买个投影仪的，放在客厅和卧室里，投影出100寸以上的电视电影，窝在沙发或床上观看，想想都是一种享受。当时看中了爱普生CH-TW5300、明基W1070+、宏碁H6510BD、优派PJD7720HD，均是1080P的机子，然而想想体积巨大卧室客厅来回搬不方便，还得安装幕布，实在麻烦（其实还是因为价格太贵），就放弃了。</p>
@@ -155,18 +155,18 @@
 <p>后来陆续也看到一些互联网品牌的机器，极米、坚果之类的，看起来还不错，娇小的体积、方便的手机互联，都很合我的心意。但心里总觉得互联网品牌底蕴太浅，做事浮躁，且大多数产品都是720P，1080P的价格跟传统品牌相比并没有什么优势，因而一直有些犹豫。</p>
 <p>直到在京东看到Z4 Air用券后达到了1919的价格，才真的十分心动了，虽说这个也是720P的物理分辨率，只有250流明，也比起之前看中的飞利浦PPX4935大了一圈，不过用的方形像素构架，还支持3D，性价比还算不错了，于是果断下单。</p>
 <p>到手后感觉做工还是挺好的，铝合金机身摸着手感不错看着逼格也高，滑盖开关设计很方便，放视频时几乎感觉不到发热，就是风扇略有点吵（因为基本都是坐在投影仪旁边看的）。于是装上优酷、Kodi、电视家浏览器，连上JBL Charge2+后，就果断把卧室的电视给拆掉了。</p>
-<p><img src="http://d.loniper.com/Szzf+" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="http://d.loniper.com/Szzf+" alt="" loading="lazy"></figure>
 <p>于是现在每天到家后，先在客厅投影出一个80来寸的屏幕边看电视边吃饭，洗完澡后移到卧室，投影出一个120寸的屏幕躺着继续追剧，实在是爽爆。</p>
-<p><img src="http://d.loniper.com/XDgQ+" alt=""></p>
+<figure data-type="image" tabindex="2"><img src="http://d.loniper.com/XDgQ+" alt="" loading="lazy"></figure>
 <p>缺点当然也是有的，由于流明数的限制，白天看得拉上窗帘；3D效果虽然还可以，但眼镜戴时间久了会有眩晕感；分辨率毕竟不是1080P，投到100寸以上，距离近了观看还是会有点模糊。</p>
 <p>但以上这些，比起一个1919元的可以投到120寸以上观看的无屏电视来说，又算得上什么呢。</p>
-<p><img src="http://d.loniper.com/ngtO+" alt=""></p>
+<figure data-type="image" tabindex="3"><img src="http://d.loniper.com/ngtO+" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[可能老了]]></title>
-        <id>https://loniper.github.io/post/ke-neng-lao-liao</id>
-        <link href="https://loniper.github.io/post/ke-neng-lao-liao">
+        <id>https://loniper.github.io/post/ke-neng-lao-liao/</id>
+        <link href="https://loniper.github.io/post/ke-neng-lao-liao/">
         </link>
         <updated>2016-06-17T04:34:44.000Z</updated>
         <summary type="html"><![CDATA[<p>今天凌晨一点多钟，被腹痛从睡梦中惊醒，起初以为是着凉了要拉肚子，结果感觉痛的地方不对，是右下腹，且有越来越痛的趋势。</p>
@@ -183,8 +183,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[小米路由器上手体验]]></title>
-        <id>https://loniper.github.io/post/xiao-mi-lu-you-qi-shang-shou-ti-yan</id>
-        <link href="https://loniper.github.io/post/xiao-mi-lu-you-qi-shang-shou-ti-yan">
+        <id>https://loniper.github.io/post/xiao-mi-lu-you-qi-shang-shou-ti-yan/</id>
+        <link href="https://loniper.github.io/post/xiao-mi-lu-you-qi-shang-shou-ti-yan/">
         </link>
         <updated>2016-03-24T10:44:29.000Z</updated>
         <summary type="html"><![CDATA[<p>前天下单的小米路由昨天试了下，感觉还可以，基于openwrt，改动还是比较大的，完全小白化了，配置上手很快。</p>
@@ -200,13 +200,13 @@
 </ol>
 <p>总的来说，上手的感觉还不错，基本能满足我的需求，接下来几天会看看稳定性，看看不关机的情况下能否持续使用。</p>
 <p>感觉要对小米黑转路转粉了＝。＝</p>
-<p><img src="http://d.loniper.com/JUt7+" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="http://d.loniper.com/JUt7+" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[关于下一代]]></title>
-        <id>https://loniper.github.io/post/guan-yu-xia-yi-dai</id>
-        <link href="https://loniper.github.io/post/guan-yu-xia-yi-dai">
+        <id>https://loniper.github.io/post/guan-yu-xia-yi-dai/</id>
+        <link href="https://loniper.github.io/post/guan-yu-xia-yi-dai/">
         </link>
         <updated>2015-12-31T10:52:39.000Z</updated>
         <summary type="html"><![CDATA[<p>这篇吐槽其实在我脑海里忍了很久，每次回家，所见所闻，都让我有种如鲠在喉不吐不快的感觉，然而却总觉得无从下手。今天跟某即将离职的同事谈论到这个话题，跟我说了他家的情况，颇为感概，就简要地扯几句吧。</p>
@@ -226,13 +226,13 @@
 <p>我爸每每跟我谈心时，总会说他多么多么苦，所做的一切都是为了我云云。当然，这点无可反驳，天下父母大多都是为子女好的，不论富贵或者贫穷，总会竭尽所能为子女创造一切可以创造的条件。我所反感的，是明明有所图，却自觉无私。不论是从初来人世时的分量、咿呀学语时的数数、求学问道时的成绩、踏足社会时的薪资，其实父母岂会不关心，大概心里总会想着，我供你吃穿，总得有点回报反馈吧。有了私心，爱便成了筹码，尽管所图的可能只是亲戚的一句赞叹、年终的一张奖状、过节的一筐水果，但毕竟不能说不求回报了。更何况大多父母还抱着“我将你养大，你大了也得养我”的想法。</p>
 <p>而作为子女，私心可能更为严重。今年爷爷住院，基本都是大姑一人在照顾，其他两个姑姑都忙着含饴弄孙，极少抽空去照看上一代。甚至在讨论轮流照看时，说可惜我不在镇江，不然可以让我照看了，听得我都觉得心寒。子女们给自己买东西时总会舍得花钱，给父母们买时却会犹豫再三，包括我也是这样，说到底，其实还是自私。</p>
 <p>不想写了，就这样吧，明天要起早回老家，可能又会被问及什么时候要小孩了。</p>
-<p><img src="http://d.loniper.com/Zbv8+" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="http://d.loniper.com/Zbv8+" alt="" loading="lazy"></figure>
 ]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[2015年度总结]]></title>
-        <id>https://loniper.github.io/post/2015-nian-du-zong-jie</id>
-        <link href="https://loniper.github.io/post/2015-nian-du-zong-jie">
+        <id>https://loniper.github.io/post/2015-nian-du-zong-jie/</id>
+        <link href="https://loniper.github.io/post/2015-nian-du-zong-jie/">
         </link>
         <updated>2015-12-21T03:12:06.000Z</updated>
         <summary type="html"><![CDATA[<p>翻了翻blog，发现已经一年没更新了，算算日子，离2016也就剩下九天了，刚好趁此机会更新下blog，总结下2015的得失吧。</p>
@@ -241,11 +241,11 @@
 <!-- more -->
 <p>2015应该说是我人生中最值得纪念的年份之一了，因为在这一年陆续添置了车子、房子，结了婚。人生的几大重要阶段都在这一年完成，现在想想竟然有些恍惚，因为两三年前还在为房子头疼不已，车子更是想都没想过。或许真是应了那句“船到桥头自然直”吧，很多事情深陷其中力图挣脱时总是思之不得，一旦顺其自然得其所法后回头一看，哦，原来也就那么回事。</p>
 <h3 id="生活">生活</h3>
-<p><img src="http://d.loniper.com/ANly+" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="http://d.loniper.com/ANly+" alt="" loading="lazy"></figure>
 <p>今年国庆，与婉琴结了婚。置身事外看别人结婚时，总觉得不胜烦琐，假模假样地拍照录像不说，光是看到要站半天迎宾和众亲戚对新人的捉弄就心生厌恶。然而轮到自己时，却又觉得厌恶中竟生出一丝喜气，就像当年的高考，考前莫名的惧怕和反感，真正考时，看到父母乃至社会的关注，却又有种难言的感动。</p>
 <p>爷爷的脑梗越来越恶化，好像四五月份的时候，住了一次院，医生拍了片子，说可能有什么癌，全家陷入悲痛。爷爷奶奶算是整个家族的父母，不仅养育了我们的上一辈，这一辈也是他们含辛茹苦带大的，甚至表哥表姐的孩子他们也有代看。看着孩子们在一边玩耍时，他们脸上的笑脸总是那么慈祥，医生却说可能患了癌症，怎能让人不难过。幸而，检查的结果并没有得癌，只是脑萎缩的程度也愈发严重了，开始不记得人不记得事情。他以前是最喜欢烦神的，不论哪个姑姑要做什么事情，他都会为他们烦心，甚至整宿翻来覆去睡不着，只为了该不该喊一个亲戚来吃酒。而我的婚事，奶奶告诉了他好几遍，他仍是记不清，只依稀知道国庆有人要办酒席，也不再会为任何事情操心，如此，不知幸也不幸。</p>
 <h3 id="工作">工作</h3>
-<p><img src="http://d.loniper.com/nQkN+" alt=""></p>
+<figure data-type="image" tabindex="2"><img src="http://d.loniper.com/nQkN+" alt="" loading="lazy"></figure>
 <p>一年半过去了，我仍旧在<a href="http://www.qianmi.com">千米网</a>的<a href="http://elife.qianmi.com">E生活</a>部门，年中的时候发生了一次较大的变动，原来属于千米网的E生活部门要求独立，个中原委不提，对我的影响就是原本归属产品研发部的我们三个产品和相关的开发人员都搬到了E生活所在的二楼，主管也由李某变成了张某。另两个产品一直对张某的理念是不认同的，因而搬下来两个月内，他们便相继离职了。</p>
 <p>我自然也动了离职的念头，在这边一年多，所学甚少，吃老本虽说也不碍事，但总会心生厌倦，且这老本有越吃越忘的迹象，总不免担心以后身无所长。</p>
 <p>然而，接了一些面试电话，总觉得不甚满意，要么太远要么薪资不到位。后来总算找到家还算满意的，于是跟张某提了离职，最终被挽留了下来。说来张某对我也算挺好的了，不要求加班，也主动给涨过薪，但总觉得这里不是久留之地，唉，明年再看吧。</p>
